@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Alex+Brush&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-logo-serif: "Bodoni Moda", "Playfair Display", serif;
+  --font-logo-script: "Alex Brush", cursive;
+  
+  --color-navy-900: #060B1E;
+  --color-navy-800: #0A163B;
+  --color-navy-700: #132454;
+  --color-navy-600: #1D3472;
+  --color-navy-400: #3E5DAE;
+  --color-accent-blue: #4E7DFF;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  body.dark {
+    background-color: #0A163B;
+    color: #FFFFFF;
+  }
+  
+  body.light {
+    background-color: #F8FAFC;
+    color: #0A163B;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.04em;
+  }
+}
+
+/* Glassmorphism Classes - Dark Luxury */
+.dark .glass-milk {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.dark .glass-milk-dark {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.dark .glass-card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark .glass-card-dark {
+  background: rgba(255, 255, 255, 0.02) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Glassmorphism Classes - Light Luxury */
+.light .glass-milk {
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(10, 22, 59, 0.08) !important;
+}
+
+.light .glass-milk-dark {
+  background: rgba(10, 22, 59, 0.03) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(10, 22, 59, 0.04) !important;
+}
+
+.light .glass-card {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(10, 22, 59, 0.06) !important;
+  box-shadow: 0 12px 40px 0 rgba(10, 22, 59, 0.05) !important;
+}
+
+.light .glass-card-dark {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(10, 22, 59, 0.08) !important;
+  box-shadow: 0 16px 48px 0 rgba(10, 22, 59, 0.08) !important;
+}
+
+/* Section background helpers - Dark vs Light */
+.dark .bg-\[\#F8FAFC\] {
+  background-color: #0A163B !important;
+}
+.light .bg-\[\#F8FAFC\] {
+  background-color: #F8FAFC !important;
+}
+
+.dark .bg-white {
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  color: #FFFFFF !important;
+}
+.light .bg-white {
+  background-color: #FFFFFF !important;
+  color: #0A163B !important;
+}
+
+.dark .bg-\[\#F1F5F9\]\/50 {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}
+.light .bg-\[\#F1F5F9\]\/50 {
+  background-color: rgba(241, 245, 249, 0.5) !important;
+}
+
+.dark .bg-slate-50, .dark .bg-gray-50, .dark .bg-neutral-50 {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}
+.light .bg-slate-50, .light .bg-gray-50, .light .bg-neutral-50 {
+  background-color: #F8FAFC !important;
+}
+
+.dark .bg-slate-100, .dark .bg-gray-100, .dark .bg-neutral-100 {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}
+.light .bg-slate-100, .light .bg-gray-100, .light .bg-neutral-100 {
+  background-color: #F1F5F9 !important;
+}
+
+/* Inputs, dropdowns, and form elements usability overrides */
+.dark input, .dark select, .dark textarea {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  color: #FFFFFF !important;
+}
+.light input, .light select, .light textarea {
+  background-color: #FFFFFF !important;
+  border-color: rgba(10, 22, 59, 0.15) !important;
+  color: #0A163B !important;
+}
+
+.dark input:focus, .dark select:focus, .dark textarea:focus {
+  border-color: #4E7DFF !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+.light input:focus, .light select:focus, .light textarea:focus {
+  border-color: #4E7DFF !important;
+  background-color: #FFFFFF !important;
+}
+
+.dark input::placeholder, .dark textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+.light input::placeholder, .light textarea::placeholder {
+  color: rgba(10, 22, 59, 0.4) !important;
+}
+
+/* Dropdown absolute panels */
+.dark .group-hover\:opacity-100 div {
+  background-color: #060B1E !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.light .group-hover\:opacity-100 div {
+  background-color: #FFFFFF !important;
+  border-color: rgba(10, 22, 59, 0.1) !important;
+}
+
+.dark .group-hover\:opacity-100 button:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #FFFFFF !important;
+}
+.light .group-hover\:opacity-100 button:hover {
+  background-color: rgba(10, 22, 59, 0.05) !important;
+  color: #0A163B !important;
+}
+
+/* Typography high contrast overrides */
+.dark .text-navy-800, .dark .text-slate-900, .dark .text-slate-800, .dark .text-gray-900, .dark .text-gray-800, .dark .text-neutral-900, .dark .text-neutral-800 {
+  color: #FFFFFF !important;
+}
+.light .text-navy-800, .light .text-slate-900, .light .text-slate-800, .light .text-gray-900, .light .text-gray-800, .light .text-neutral-900, .light .text-neutral-800 {
+  color: #0A163B !important;
+}
+
+.dark .text-gray-700, .dark .text-neutral-700 {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.light .text-gray-700, .light .text-neutral-700 {
+  color: rgba(10, 22, 59, 0.8) !important;
+}
+
+.dark .text-gray-600, .dark .text-neutral-600 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.light .text-gray-600, .light .text-neutral-600 {
+  color: rgba(10, 22, 59, 0.7) !important;
+}
+
+.dark .text-gray-500, .dark .text-neutral-500 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.light .text-gray-500, .light .text-neutral-500 {
+  color: rgba(10, 22, 59, 0.5) !important;
+}
+
+.dark .text-gray-400, .dark .text-neutral-400 {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+.light .text-gray-400, .light .text-neutral-400 {
+  color: rgba(10, 22, 59, 0.4) !important;
+}
+
+/* Borders */
+.dark .border-slate-100, .dark .border-slate-200, .dark .border-gray-100, .dark .border-gray-200, .dark .border-neutral-100, .dark .border-neutral-200, .dark .border-white\/20, .dark .border-white\/50, .dark .border-neutral-200\/50 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.light .border-slate-100, .light .border-slate-200, .light .border-gray-100, .light .border-gray-200, .light .border-neutral-100, .light .border-neutral-200, .light .border-white\/20, .light .border-white\/50, .light .border-neutral-200\/50 {
+  border-color: rgba(10, 22, 59, 0.1) !important;
+}
+
+/* Custom design highlights */
+.pill-tag {
+  background: rgba(78, 125, 255, 0.2) !important;
+  color: #4E7DFF !important;
+}
+
+/* Smooth custom scrollbar for luxury brand aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A163B !important;
+}
+.light ::-webkit-scrollbar-track {
+  background: #F8FAFC !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 3px;
+}
+.light ::-webkit-scrollbar-thumb {
+  background: rgba(10, 22, 59, 0.1) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+}
+.light ::-webkit-scrollbar-thumb:hover {
+  background: rgba(10, 22, 59, 0.25) !important;
+}

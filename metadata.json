@@ -1,0 +1,6 @@
+{
+  "name": "MONZA Luxe",
+  "description": "Premium, modern, luxury fashion e-commerce store and CMS dashboard for MONZA Luxe",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

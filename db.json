@@ -1,0 +1,388 @@
+{
+  "products": [
+    {
+      "id": "prod-1",
+      "title": "Monarch Double-Breasted Trench",
+      "description": "A signature double-breasted trench coat tailored in water-repellent cotton gabardine. Features unstructured shoulders, clean lines, an elegant belt, and an effortless drape that embodies classic luxury.",
+      "price": 0,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Midnight Blue",
+        "Sand Beige",
+        "Obsidian Black"
+      ],
+      "category": "Coats & Jackets",
+      "stock": 0,
+      "isFeatured": true,
+      "isNew": true,
+      "images": []
+    },
+    {
+      "id": "prod-2",
+      "title": "Oversized Cashmere Crewneck",
+      "description": "Crafted from exceptionally soft, heavy-gauge premium Mongolian cashmere. This knit features relaxed proportions, heavy ribbed trims, and dropped shoulders for a sophisticated off-duty aesthetic.",
+      "price": 340,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Oatmeal Heather",
+        "Charcoal Gray",
+        "Off-White"
+      ],
+      "category": "Knitwear",
+      "stock": 18,
+      "isFeatured": true,
+      "isNew": false,
+      "images": []
+    },
+    {
+      "id": "prod-3",
+      "title": "Classic Silk-Blend Tailored Shirt",
+      "description": "An elegant, fluid button-down cut from a lightweight silk-cotton blend. Detailed with a modern hidden placket, clean cuffs, and a soft collar design that bridges casual and formal dressing.",
+      "price": 195,
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        "Snow White",
+        "Powder Blue",
+        "Obsidian Black"
+      ],
+      "category": "Shirts",
+      "stock": 25,
+      "isFeatured": false,
+      "isNew": true,
+      "images": []
+    },
+    {
+      "id": "prod-4",
+      "title": "Pleated Wool-Blend Trouser",
+      "description": "Tailored trouser crafted in structured tropical-weight virgin wool blend. Features a elegant high-rise waist, single front pleats, pressed creases, and a wide-leg profile.",
+      "price": 240,
+      "originalPrice": 240,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Midnight Blue",
+        "Espresso Brown",
+        "Charcoal Gray"
+      ],
+      "category": "Trousers & Denim",
+      "stock": 8,
+      "isFeatured": true,
+      "isSale": false,
+      "images": []
+    },
+    {
+      "id": "prod-5",
+      "title": "Italian Nappa Leather Belt",
+      "description": "A luxury minimalist belt crafted in Tuscany from vegetable-tanned full-grain leather. Finished with an elegant, matte silver-brushed solid brass buckle and hand-painted edges.",
+      "price": 110,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Obsidian Black",
+        "Mahogany Brown"
+      ],
+      "category": "Accessories",
+      "stock": 30,
+      "isFeatured": false,
+      "isSale": true,
+      "discount": 10,
+      "originalPrice": 120,
+      "images": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Coats & Jackets",
+      "slug": "coats-jackets",
+      "description": "Structured tailoring and elegant outwear silhouettes."
+    },
+    {
+      "id": "cat-2",
+      "name": "Knitwear",
+      "slug": "knitwear",
+      "description": "Sumptuous cashmere, heavy wool, and refined layering knits."
+    },
+    {
+      "id": "cat-3",
+      "name": "Shirts",
+      "slug": "shirts",
+      "description": "Premium cotton, silk, and linen tailored shirts."
+    },
+    {
+      "id": "cat-4",
+      "name": "Trousers & Denim",
+      "slug": "trousers-denim",
+      "description": "Timeless trousers, pleat pants, and relaxed raw denim."
+    },
+    {
+      "id": "cat-5",
+      "name": "Accessories",
+      "slug": "accessories",
+      "description": "High-end leather goods, belts, scarves, and understated luxury."
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-9824",
+      "customerId": "cust-1",
+      "customerName": "Alex Mercer",
+      "email": "alex@example.com",
+      "items": [
+        {
+          "productId": "prod-1",
+          "title": "Monarch Double-Breasted Trench",
+          "price": 490,
+          "quantity": 1,
+          "selectedSize": "M",
+          "selectedColor": "Sand Beige"
+        }
+      ],
+      "total": 505,
+      "status": "Processing",
+      "shippingAddress": {
+        "addressLine": "124 Rivington St, Apt 4B",
+        "city": "New York",
+        "postalCode": "10002",
+        "country": "United States"
+      },
+      "paymentMethod": "Apple Pay",
+      "shippingMethod": "Standard Delivery",
+      "createdAt": "2026-06-25T14:32:00Z"
+    },
+    {
+      "id": "ORD-9511",
+      "customerId": "cust-2",
+      "customerName": "Elena Rostova",
+      "email": "elena@example.com",
+      "items": [
+        {
+          "productId": "prod-2",
+          "title": "Oversized Cashmere Crewneck",
+          "price": 340,
+          "quantity": 1,
+          "selectedSize": "S",
+          "selectedColor": "Oatmeal Heather"
+        }
+      ],
+      "total": 355,
+      "status": "Delivered",
+      "shippingAddress": {
+        "addressLine": "Rue de l'Université, 45",
+        "city": "Paris",
+        "postalCode": "75007",
+        "country": "France"
+      },
+      "paymentMethod": "Visa Premium",
+      "shippingMethod": "Standard Delivery",
+      "createdAt": "2026-06-20T10:15:00Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-1",
+      "name": "Alex Mercer",
+      "email": "alex@example.com",
+      "ordersCount": 1,
+      "totalSpent": 505,
+      "createdAt": "2026-06-25T14:30:00Z"
+    },
+    {
+      "id": "cust-2",
+      "name": "Elena Rostova",
+      "email": "elena@example.com",
+      "ordersCount": 1,
+      "totalSpent": 355,
+      "createdAt": "2026-06-20T10:10:00Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "coup-1",
+      "code": "MONZAFIRST",
+      "type": "percentage",
+      "value": 10,
+      "active": true,
+      "minSpend": 100
+    },
+    {
+      "id": "coup-2",
+      "code": "LUXE50",
+      "type": "fixed",
+      "value": 50,
+      "active": true,
+      "minSpend": 300
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-1",
+      "productId": "prod-1",
+      "productTitle": "Monarch Double-Breasted Trench",
+      "customerName": "Benjamin S.",
+      "rating": 5,
+      "comment": "Absolutely stunning silhouette. The weight of the gabardine is substantial, and the drape is incredibly premium. Far exceeds expectations.",
+      "createdAt": "2026-06-24T18:40:00Z",
+      "approved": true
+    },
+    {
+      "id": "rev-2",
+      "productId": "prod-2",
+      "productTitle": "Oversized Cashmere Crewneck",
+      "customerName": "Clara M.",
+      "rating": 5,
+      "comment": "Incredibly soft cashmere. The fit is beautifully oversized and modern without swallowing you up. Worth every penny.",
+      "createdAt": "2026-06-22T09:12:00Z",
+      "approved": true
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "blog-1",
+      "title": "The Luxury of Intentionality: Philosophy of Timeless Tailoring",
+      "excerpt": "In a world of fast-moving trends, MONZA Luxe represents a conscious retreat toward craftsmanship, tactile weight, and structured elegance.",
+      "content": "<p>True style is a form of architectural discipline. It is about form, structure, and material weight. Our newest Autumn/Winter collection is a physical manifestation of this philosophy.</p><p>We have carefully selected double-twist cotton gabardines, virgin wools, and Mongolian cashmere. These materials do not simply cover the body; they respond to it, draping effortlessly and retaining structure for a lifetime.</p><p>To build a timeless wardrobe, start with three key foundations: the perfectly draped trench, the heavy-knit cashmere sweater, and the pleat-front wool trouser. Each piece is designed to build upon the next, creating a quiet yet powerful visual statement.</p>",
+      "author": "Creative Director",
+      "date": "June 18, 2026",
+      "slug": "luxury-of-intentionality"
+    },
+    {
+      "id": "blog-2",
+      "title": "Unstructured vs. Structured Outerwear: Finding the Balance",
+      "excerpt": "An exploration into garment architecture and how modern tailoring balances elegant rigidity with casual fluid motion.",
+      "content": "<p>The traditional suit was a cage. Heavy canvas linings, rigid shoulder pads, and stiff interlinings forced the body into submission. Modern luxury offers an escape.</p><p>By deconstructing the shoulders of our trench coats and jackets, we've created a silhouette that moves organically with the wearer. The shape remains clean, but the feeling is completely unrestrictive.</p><p>When dressing for the colder seasons, pair an unstructured coat with a heavily structured pleated wool trouser. This tension between fluid movement and tailored lines is the sweet spot of contemporary luxury dressing.</p>",
+      "author": "Head of Design",
+      "date": "June 10, 2026",
+      "slug": "unstructured-outerwear-balance"
+    }
+  ],
+  "shippingMethods": [
+    {
+      "id": "ship-1",
+      "name": "Standard Insured Delivery",
+      "price": 15,
+      "duration": "3-5 Business Days"
+    },
+    {
+      "id": "ship-2",
+      "name": "Premium Overnight Express",
+      "price": 35,
+      "duration": "Next Business Day"
+    }
+  ],
+  "cms": {
+    "hero": {
+      "title": "MONZA LUXE",
+      "subtitle": "AUTUMN / WINTER 2026",
+      "description": "A study in silent elegance, immaculate tailoring, and heavy-weight textures. Experience contemporary high-end silhouettes crafted intentionally for the modern wardrobe.",
+      "buttonText": "EXPLORE THE EDIT",
+      "backgroundImage": ""
+    },
+    "navigation": [
+      {
+        "name": "Collection",
+        "path": "/shop"
+      },
+      {
+        "name": "About Us",
+        "path": "/about"
+      },
+      {
+        "name": "Journal",
+        "path": "/blog"
+      },
+      {
+        "name": "Inquiries",
+        "path": "/contact"
+      }
+    ],
+    "about": {
+      "story": "Founded as a contemporary fashion house, MONZA Luxe is a response to fast-paced trends. We believe in the tactile power of weight, premium drape, and absolute minimalist detailing. Each collection is developed incrementally in micro-runs, using ethical mills in Italy and Mongolia. We design with longevity in mind, creating pieces that develop individual patina and character through years of active wear.",
+      "philosophy": "We reject visual noise. No loud logos, no temporary gimmick details, no cheap synthetic fabrics. The premium character of a MONZA Luxe garment is conveyed purely through the sculptural depth of its pleats, the substantial weight of its weave, and its refined monochromatic palette."
+    },
+    "contact": {
+      "email": "concierge@monzaluxe.com",
+      "phone": "+33 (0) 1 45 88 99 22",
+      "address": "14 Rue du Faubourg Saint-Honoré, 75008 Paris, France",
+      "instagram": "monzaluxe",
+      "facebook": "monzaluxe.official",
+      "pinterest": "monzaluxe"
+    },
+    "seo": {
+      "metaTitle": "MONZA Luxe | Premium Modern Fashion & Tailoring",
+      "metaDescription": "Experience silent luxury. High-end minimal trench coats, Mongolian cashmere knitwear, and wool tailored trousers. Designed in Paris, crafted ethically."
+    },
+    "emailTemplates": {
+      "orderPlaced": "Thank you for your order with MONZA Luxe. We are currently reviewing your selection. Once processed and dispatched, you will receive an active tracking link. Standard premium delivery applies.",
+      "orderShipped": "Your selection has been prepared and dispatched from our logistics house in Paris. Your active tracking number is enclosed. Thank you for your continued trust."
+    }
+  },
+  "currencies": [
+    {
+      "code": "USD",
+      "symbol": "$",
+      "rate": 1
+    },
+    {
+      "code": "EUR",
+      "symbol": "€",
+      "rate": 0.92
+    },
+    {
+      "code": "GBP",
+      "symbol": "£",
+      "rate": 0.79
+    },
+    {
+      "code": "JPY",
+      "symbol": "¥",
+      "rate": 158.5
+    },
+    {
+      "code": "DZD",
+      "symbol": "DA",
+      "rate": 134
+    }
+  ],
+  "languages": [
+    {
+      "code": "EN",
+      "name": "English"
+    },
+    {
+      "code": "FR",
+      "name": "Français"
+    },
+    {
+      "code": "IT",
+      "name": "Italiano"
+    },
+    {
+      "code": "AR",
+      "name": "العربية"
+    }
+  ],
+  "activeCurrency": "USD",
+  "activeLanguage": "EN"
+}
